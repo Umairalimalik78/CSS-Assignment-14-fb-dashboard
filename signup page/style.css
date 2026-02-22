@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: arial;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facebook_logo {
+    height: 100px;
+    margin: 5px 0px;
+}
+
+.signup_card {
+    max-width: 430px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    margin: 0px 20px 50px 20px;
+}
+
+.card_headings {
+    border-bottom: 1px solid #dadde1;
+    padding: 10px 16px;
+    text-align: center;
+}
+
+.card_title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1c1e21;
+}
+
+.card_subtitle {
+    font-size: 15px;
+    color: #606770;
+}
+
+.signup_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.name_fields {
+    display: flex;
+    gap: 10px;
+}
+
+.input_field {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #dadde1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.input_field:focus {
+    border-color: #1877f2;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_group span {
+    width: 13px;
+    height: 13px;
+    font-size: 9px;
+    background-color: #757c85;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label_with_info {
+    font-size: 13px;
+    color: #606770;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.info_icon {
+    font-size: 12px;
+    color: #606770;
+    cursor: pointer;
+}
+
+.date_selects {
+    display: flex;
+    gap: 10px;
+}
+
+.date_selects select {
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #dadde1;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.date_selects select:focus {
+    border-color: #1877f2;
+}
+
+.gender_radios {
+    display: flex;
+    gap: 10px;
+}
+
+.radio_label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border: 1px solid #dadde1;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #1c1e21;
+    cursor: pointer;
+}
+
+.terms_texts {
+    margin: 5px 0px;
+}
+
+.terms_texts p {
+    font-size: 11px;
+    color: #777;
+    line-height: 1.3;
+    margin: 7px;
+}
+
+.terms_texts a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.terms_texts a:hover {
+    text-decoration: underline;
+}
+
+.signup_button_container {
+    text-align: center;
+}
+
+.signup_button {
+    width: 190px;
+    height: 36px;
+    background-color: #00a400;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.signup_button:hover {
+    color: #ececec;
+}
+
+.login_link {
+    text-align: center;
+}
+
+.login_link a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .signup_card {
+        padding: 20px 0px;
+    }
+
+    .name_fields {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .date_selects {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .gender_radios {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .signup_button {
+        width: 100%;
+    }
+
+    .login_link a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .facebook_logo {
+        height: 70px;
+    }
+
+    .card_title {
+        font-size: 22px;
+    }
+
+    .card_subtitle {
+        font-size: 13px;
+    }
+
+    .input_field,
+    .date_selects select {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .radio_label {
+        font-size: 14px;
+    }
+
+    .terms_texts p {
+        font-size: 10px;
+    }
+
+    .signup_button {
+        font-size: 16px;
+    }
+}
