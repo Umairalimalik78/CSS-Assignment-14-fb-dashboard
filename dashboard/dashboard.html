@@ -350,7 +350,50 @@
 
                     <div class="post-content">
                         <div class="post-text">
-                            This is why pretty design fails.... <button class="see-more-btn">See more</button>
+                            <p class="post-text-content" id="post-text-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.
+                            </p>
+                            <button class="see-more-btn" id="see-more-btn" onclick="togglePostText()">... See more</button>
+
+                            <style>
+                                .see-more-btn {
+                                    background: none;
+                                    border: none;
+                                    color: var(--primary-color);
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    padding: 0;
+                                    margin-left: 5px;
+                                }
+
+                                .post-text-content.collapsed {
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 3;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                }
+                                
+                            </style>
+
+                            <script>
+                                function togglePostText() {
+                                    const seeMoreBtn = document.getElementById('see-more-btn');
+                                    const postTextContent = document.getElementById('post-text-content');
+
+                                    if (postTextContent.classList.contains('collapsed')) {
+                                        postTextContent.classList.remove('collapsed');
+                                        seeMoreBtn.textContent = '... See less';
+                                    } else {
+                                        postTextContent.classList.add('collapsed');
+                                        seeMoreBtn.textContent = '... See more'; 
+                                    }
+                                }
+                            </script>
                         </div>
 
                         <div class="post-image-container">
