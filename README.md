@@ -12,8 +12,7 @@ A clean and realistic clone of the **Facebook** interface built with pure **HTML
 
 ## 📸 Preview
 
-> <img width="1346" height="602" alt="image" src="https://github.com/user-attachments/assets/9d805001-20ad-4b6f-a6e4-f11f8a136ad7" />
-
+> <img width="1351" height="3325" alt="fb-clone-umair netlify app_dashboard_dashboard (2)" src="https://github.com/user-attachments/assets/57500c7e-858d-44ee-a795-de5b38a6724b" />
 
 ---
 
